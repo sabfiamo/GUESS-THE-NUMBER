@@ -33,6 +33,8 @@ function handleClickButton(event)
     else if (inputNumber===numberRandom )
     {
         infoElement.innerHTML="Has ganado campeona!!!";
+        setInterval("location.reload()",2000);
+
     }
     else if (inputNumber>numberRandom )
     {
