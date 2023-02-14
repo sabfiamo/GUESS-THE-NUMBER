@@ -18,7 +18,7 @@ function handleClickButton(event){
     console.log(timesCounter);
     countElement.innerHTML=timesCounter;
     const inputNumber=parseInt(inputElement.value);
-    if ((inputNumber>100) && (inputNumber<0))
+    if ((inputNumber>100) || (inputNumber<0))
     {
         infoElement.innerHTML="El número debe estar entre 1 y 100";
     }else if (inputNumber===numberRandom )
