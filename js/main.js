@@ -13,25 +13,27 @@ function getRandomNumber(max)
 function handleClickButton(event){
     event.preventDefault();
     timesCounter++;
-    console.log(inputElement.value);
-    console.log(numberRandom);
-    console.log(timesCounter);
-    countElement.innerHTML=timesCounter;
+    console.log('Número introducido: '+inputElement.value);
+    console.log('Número aleatorio: '+numberRandom);
+    console.log('Contador de intentos:'+timesCounter);
+
+    //Contar los intentos
+    countElement.innerHTML='Número de intentos: ' +timesCounter;
     const inputNumber=parseInt(inputElement.value);
     if ((inputNumber>100) || (inputNumber<0))
     {
-        infoElement.innerHTML="El número debe estar entre 1 y 100";
+        infoElement.innerHTML="Pista: El número debe estar entre 1 y 100";
     }else if (inputNumber===numberRandom )
         {
-            infoElement.innerHTML="Has ganado campeona";
+            infoElement.innerHTML="Has ganado campeona!!!";
         }
     else if (inputNumber>numberRandom )
     {
-        infoElement.innerHTML="Demasiado alto";
+        infoElement.innerHTML="Pista: Demasiado alto.";
     }
     else
     {
-        infoElement.innerHTML="Demasiado bajo";
+        infoElement.innerHTML="Pista: Demasiado bajo.";
     }
     
 }

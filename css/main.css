@@ -1,0 +1,28 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+ }
+ .label{
+    margin-bottom: 10px;
+ }
+ .input{
+    height: 20px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: grey;
+ }
+.button{
+    width: 80px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color:white;
+    background-color: grey;
+}
+.info, 
+.count{
+    border: 3px solid grey;
+    padding: 5px;
+}
+
