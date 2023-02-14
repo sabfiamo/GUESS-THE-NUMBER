@@ -12,8 +12,11 @@ function getRandomNumber(max)
 
 function handleClickButton(event){
     event.preventDefault();
+    timesCounter++;
     console.log(inputElement.value);
     console.log(numberRandom);
+    console.log(timesCounter);
+    countElement.innerHTML=timesCounter;
     const inputNumber=parseInt(inputElement.value);
     if ((inputNumber>100) && (inputNumber<0))
     {
@@ -34,4 +37,6 @@ function handleClickButton(event){
 }
 //número aleatorio entre 1 y 100
 const numberRandom=getRandomNumber(100)+1;
+//contador de intentos
+let timesCounter=0;
 button.addEventListener('click', handleClickButton);
