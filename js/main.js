@@ -17,7 +17,16 @@ function writeMsj(message)
 {
     infoElement.innerHTML=message;
 }
-
+function checkValue()
+{
+    const valoresAceptados = /^[0-9]+$/;
+     if ((!(inputElement.value===''))&&
+    (inputElement.value.match(valoresAceptados)))
+    {
+        return true;
+    }
+    else return false;
+}
 function compareNumbers()
 {
     const inputNumber=parseInt(inputElement.value);
@@ -46,13 +55,18 @@ function compareNumbers()
 function handleClickButton(event)
 {
     event.preventDefault();
-    timesCounter++;
+    
     console.log('Número introducido: '+ inputElement.value);
     console.log('Número aleatorio: '+ numberRandom);
     console.log('Contador de intentos:'+ timesCounter);
     //Contar los intentos
-    countElement.innerHTML='Número de intentos: ' + timesCounter;
-    compareNumbers();
+    
+    if (checkValue())
+    {
+        timesCounter++;
+        countElement.innerHTML='Número de intentos: ' + timesCounter;
+        compareNumbers();
+    } 
     
 }
 
