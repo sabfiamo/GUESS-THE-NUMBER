@@ -55,19 +55,14 @@ function compareNumbers()
 function handleClickButton(event)
 {
     event.preventDefault();
-    
-    console.log('Número introducido: '+ inputElement.value);
-    console.log('Número aleatorio: '+ numberRandom);
-    console.log('Contador de intentos:'+ timesCounter);
-    //Contar los intentos
+     //Contar los intentos
     
     if (checkValue())
     {
         timesCounter++;
         countElement.innerHTML='Número de intentos: ' + timesCounter;
         compareNumbers();
-    } 
-    
+    }     
 }
 
 buttonTest.addEventListener('click', handleClickButton);
