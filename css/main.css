@@ -1,26 +1,54 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.title{
+    color:green;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+}
 .form{
     display: flex;
     flex-direction: column;
-    width: 300px;
+   
  }
  .label{
     margin-bottom: 10px;
+  
  }
  .input{
-    height: 20px;
+    height: fit-content;
     margin-bottom: 10px;
+    font-size: 120px;
+    color:green;
+    width:180px;
+    background-image: url("../images/images-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
   }
-.button{
-    width: 80px;
-    height: 30px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    color:white;
-    background-color: grey; 
-}
-.info, 
+
+
 .count{
-    border: 3px solid grey;
+    border: 3px solid green;
+    background-color: green;
+    color:white;
     padding: 5px;
+    font-size: 25px;
+
+}
+.info {
+      padding: 5px;
+    color:green;
+    font-size: 25px;
+
 }
 
