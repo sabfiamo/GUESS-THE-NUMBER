@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/virtual-key.css" />
+  </head>
+  <body>
+    <main class="main js_main">
+      <h1 class="title">Guess the number</h1>
+      <section class="section">
+        <form action="#" class="form">
+          <input class="input js_input" type="text" readonly id="number" />
+        </form>
+        <table class="table_teclado js_buttonTable">
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td colspan="2" rowspan="3">Guess</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td colspan="2">0</td>
+            <td>
+              <img class="btn_delete" id="btn_delete" src="images/borrar.png" />
+            </td>
+            <td>Reset</td>
+          </tr>
+        </table>
+      </section>
+      <p class="info js_info">
+        Hint: The number has to have a value between 1 and 100.
+      </p>
+      <p class="count js_count">Number of attemps: 0</p>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
